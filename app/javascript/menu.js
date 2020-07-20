@@ -21,9 +21,9 @@ const buildMenuItems = () => {
     items.className = 'dropdown'
     items.addEventListener('click', () => linkClickListener(items))
     items.innerHTML = `
-    <li><a href='/'>home</a></li>
-    <li><a href='/about'>about</a></li>
-    <li><a href='/contact'>contact</a></li>
+    <li><a href='/' class='menu-item'>home</a></li>
+    <li><a href='/about' class='menu-item'>about</a></li>
+    <li><a href='/contact' class='menu-item'>contact</a></li>
     `
     return items
 }
