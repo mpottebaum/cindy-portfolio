@@ -6,4 +6,16 @@
     position: absolute;
     z-index: 1;
     background-color: white;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+p, ul {
+    margin: auto;
 }
