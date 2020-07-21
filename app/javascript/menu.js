@@ -1,16 +1,15 @@
+
+
 export const menuListener = () => {
+    const menu = document.getElementById('menu')
     const menuButton = document.getElementById('menu-btn')
-    menuButton.dataset.status = 'closed'
     menuButton.addEventListener('click', () => {
-        const menu = document.getElementById('menu')
-        if(menuButton.dataset.status === 'closed') {
+        const menuItems = document.getElementById('menu-items')
+        if(menuItems) {
+            menu.removeChild(menuItems)
+        } else {
             const newMenuItems = buildMenuItems()
             menu.appendChild(newMenuItems)
-            menuButton.dataset.status = 'open'
-        } else {
-            const oldMenuItems = document.getElementById('menu-items')
-            menu.removeChild(oldMenuItems)
-            menuButton.dataset.status = 'closed'
         }
     })
 }
@@ -31,4 +30,17 @@ const buildMenuItems = () => {
 const linkClickListener = items => {
     const menu = document.getElementById('menu')
     menu.removeChild(items)
+}
+
+
+
+export const menuExitListener = () => {
+    const menu = document.getElementById('menu')
+    const body = document.getElementById('root')
+    body.addEventListener('click', e => {
+        const menuItems = document.getElementById('menu-items')
+        if(e.target.className !== 'menu' && menuItems) {
+            menu.removeChild(menuItems)
+        }
+    })
 }

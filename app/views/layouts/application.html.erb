@@ -11,13 +11,15 @@
   </head>
 
   <body>
-    <div id='menu'>
-      <div id='menu-btn' data-status='closed'>
-        <p>menu</p>
+    <div id='root'>
+      <div id='menu' class='menu'>
+        <div class='menu'>
+          <p id='menu-btn' class='menu' data-status='closed'>menu</p>
+        </div>
       </div>
-    </div>
-    <div class='main'>
-      <%= yield %>
+      <div class='main'>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>

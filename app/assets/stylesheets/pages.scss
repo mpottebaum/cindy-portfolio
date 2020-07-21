@@ -25,3 +25,30 @@ p, ul {
     text-decoration: none;
     color: black;
 }
+
+#menu-btn {
+    cursor: pointer;
+    width: 100pt;
+}
+
+.title {
+    font-size: 25pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-dot {
+    height: 6pt;
+    width: 6pt;
+    border-radius: 3pt;
+    background-color: black;
+    align-self: center;
+    margin-left: 6pt;
+    margin-right: 6pt;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+}
