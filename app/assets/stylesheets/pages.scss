@@ -16,7 +16,7 @@ body {
     font-family: 'Quattrocento', serif;
 }
 
-p, ul {
+p, ul, h1 {
     margin: auto;
 }
 
@@ -48,7 +48,28 @@ p, ul {
     margin-right: 6pt;
 }
 
+.subtitle {
+    margin: 0.6em;
+}
+
 #root {
-    height: 100vh;
-    width: 100vw;
+    // height: 100%;
+    width: 100%;
+}
+
+.pg {
+    margin-top: 0.67em;
+}
+
+.contact {
+    margin-bottom: 1em;
+}
+
+.home-img {
+    width: 100%;
+    max-width: 500pt;
+    max-height: 75vh;
+    min-height: 400pt;
+    object-fit: contain;
+    justify-self: center;
 }
