@@ -16,32 +16,30 @@ body {
     font-family: 'Quattrocento', serif;
 }
 
-p, ul, h1 {
+p, ul, h1, h4 {
     margin: auto;
 }
 
-.menu-item {
-    background-color: white;
-    text-decoration: none;
-    color: black;
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 #menu-btn {
     cursor: pointer;
-    width: 100pt;
 }
 
 .title {
-    font-size: 25pt;
+    font-size: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .title-dot {
-    height: 6pt;
-    width: 6pt;
-    border-radius: 3pt;
+    height: 10pt;
+    width: 10pt;
+    border-radius: 7pt;
     background-color: black;
     align-self: center;
     margin-left: 6pt;
@@ -49,31 +47,34 @@ p, ul, h1 {
 }
 
 .subtitle {
-    margin: 0.6em;
-}
-
-#root {
-    // height: 100%;
-    width: 100%;
-}
-
-.pg {
-    margin-top: 0.67em;
-}
-
-.contact {
-    margin-bottom: 1em;
+    font-size: 18px;
 }
 
 .home-img {
     width: 100%;
-    max-width: 500pt;
-    max-height: 75vh;
-    min-height: 400pt;
+    height: 75vh;
+    min-height: 525px;
     object-fit: contain;
-    justify-self: center;
 }
 
-.main {
-    height: 100vh;
+@media (min-width: 320px) and (max-width: 999px) {
+
+    .title {
+        font-size: calc(40px + 6 * ((100vw - 320px) / 680));
+    }
+    
+    .subtitle {
+        font-size: calc(18px + 6 * ((100vw - 320px) / 680));
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 23px;
+    }
 }

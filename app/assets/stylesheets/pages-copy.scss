@@ -1,0 +1,142 @@
+
+/*
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+}
+
+p, ul, h1 {
+    margin: auto;
+
+}
+
+.menu-item {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: calc(5pt + 1.5vmax);
+}
+
+#menu-btn {
+    cursor: pointer;
+    width: 100pt;
+}
+
+.title {
+    font-size: 11vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-dot {
+    height: 10pt;
+    width: 10pt;
+    border-radius: 7pt;
+    background-color: black;
+    align-self: center;
+    margin-left: 6pt;
+    margin-right: 6pt;
+}
+
+.subtitle {
+    margin: 0.6em;
+    font-size: calc(5pt + 1.5vmax);
+}
+
+#root {
+    // height: 100%;
+    width: 100%;
+}
+
+.pg {
+    margin-top: 1em;
+}
+
+.contact {
+    margin-bottom: 1em;
+}
+
+.home-img {
+    width: 100%;
+    min-width: 240pt;
+    max-width: 500pt;
+    max-height: 75vh;
+    min-height: 400pt;
+    object-fit: cover;
+    object-position: 50% 30%;
+    margin-top: 5pt;
+}
+
+.main {
+    height: 100vh;
+}
+
+.menu {
+    font-size: 5.35vw;
+    padding: 1vw;
+}
+
+// @media (min-width)
+
+
+@media (min-width: 415px) {
+
+    .menu {
+        font-size: calc(3pt + 2vmax);
+        padding: 0pt;
+    }
+
+    .menu-item {
+        font-size: calc(5pt + 1.5vmax);
+    }
+
+    .title {
+        font-size: calc(10pt + 5vmax);
+    }
+
+    .title-dot {
+        height: 6pt;
+        width: 6pt;
+        border-radius: 3pt;
+    }
+
+    .subtitle {
+        font-size: calc(8pt + 1vmax);
+        margin: 10pt;
+    }
+
+    .home-img {
+        width: 100%;
+        min-width: 240pt;
+        max-width: 500pt;
+        max-height: 75vh;
+        min-height: 400pt;
+        object-fit: cover;
+        object-position: 50% 30%;
+        margin-top: 0.2em;
+    }
+}
+
+@media (min-width: 960px) {
+    .home-img {
+        max-width: 670px;
+        object-fit: cover;
+        min-height: 40px;
+        max-height: 495px;
+    }
+
+    .pg {
+        margin-top: 0.3em;
+    }
+}
+*/
