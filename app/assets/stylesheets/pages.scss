@@ -2,17 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+// SITE-WIDE
+
 #root {
     min-width: 350px;
-}
-
-.dropdown {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    list-style-type: none;
-    padding: 0;
 }
 
 body {
@@ -26,14 +20,33 @@ p, ul, h1, h4 {
     margin-block-end: 0;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    padding: 0;
 }
 
 #menu-btn {
     cursor: pointer;
+}
+
+.main {
+    height: 100vh;
+}
+
+
+// HOME page
+
+.main-home {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -84,6 +97,36 @@ p, ul, h1, h4 {
 }
 
 
+// ABOUT/APPROACH pages
+
+.about-title {
+    margin-top: 0.5em;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.copy-p {
+    max-width: 550px;
+    width: 100%;
+}
+
+
+// CONTACT page
+
+.contact-name {
+    margin-top: 2em;
+}
+
+.phone, .address {
+    margin: 2em;
+}
+
+
 
 @media (min-width: 320px) and (max-width: 999px) {
 
@@ -105,14 +148,4 @@ p, ul, h1, h4 {
     .subtitle {
         font-size: 23px;
     }
-
-    // .home-img {
-    //     height: 75vh;
-    //     min-height: 525px;
-    // }
-    
-    // .home-img-container {
-    //     flex-direction: row;
-    //     justify-content: center;
-    // }
 }
