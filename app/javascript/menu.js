@@ -22,6 +22,7 @@ const buildMenuItems = () => {
     items.innerHTML = `
     <li><a href='/' class='menu-item'>home</a></li>
     <li><a href='/about' class='menu-item'>about</a></li>
+    <li><a href='/approach' class='menu-item'>approach</a></li>
     <li><a href='/contact' class='menu-item'>contact</a></li>
     `
     return items

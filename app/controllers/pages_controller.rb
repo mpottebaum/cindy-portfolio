@@ -6,6 +6,9 @@ class PagesController < ApplicationController
     def about
     end
 
+    def approach
+    end
+
     def contact
     end
 end

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   get '/', to: 'pages#home'
   get '/about', to: 'pages#about'
+  get '/approach', to: 'pages#approach'
   get '/contact', to: 'pages#contact'
 end

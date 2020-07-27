@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+#root {
+    min-width: 350px;
+}
+
 .dropdown {
     position: absolute;
     z-index: 1;
@@ -18,11 +22,14 @@ body {
 
 p, ul, h1, h4 {
     margin: auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 #menu-btn {
@@ -48,14 +55,35 @@ p, ul, h1, h4 {
 
 .subtitle {
     font-size: 18px;
+    margin-bottom: 0.6em;
+
+}
+
+.home-img-container {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .home-img {
-    width: 100%;
-    height: 75vh;
-    min-height: 525px;
+    height: 65vh;
+    min-height: 490px;
     object-fit: contain;
 }
+
+.home-name-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-name {
+    font-size: 1.3rem;
+}
+
+
 
 @media (min-width: 320px) and (max-width: 999px) {
 
@@ -77,4 +105,14 @@ p, ul, h1, h4 {
     .subtitle {
         font-size: 23px;
     }
+
+    // .home-img {
+    //     height: 75vh;
+    //     min-height: 525px;
+    // }
+    
+    // .home-img-container {
+    //     flex-direction: row;
+    //     justify-content: center;
+    // }
 }
