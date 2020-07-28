@@ -5,8 +5,12 @@
 
 // SITE-WIDE
 
+html {
+    background-color: #FDEDD8;
+}
+
 #root {
-    min-width: 350px;
+    min-width: 300px;
 }
 
 body {
@@ -18,6 +22,10 @@ p, ul, h1, h4 {
     margin: auto;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+p {
+    font-size: 1.1rem;
 }
 
 ul {
@@ -39,6 +47,7 @@ ul {
 
 .main {
     height: 100vh;
+    min-height: 650px;
 }
 
 
@@ -108,11 +117,43 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    margin-top: 0.8em;
 }
 
 .copy-p {
-    max-width: 550px;
+    max-width: 800px;
     width: 100%;
+    margin-bottom: 1.2em;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2em;
+}
+
+.quote-txt {
+    margin-bottom: 0.5em;
+}
+
+.img-block {
+    align-self: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.img-bl-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    height: 370px;
+}
+
+.about-img {
+    object-fit: contain;
+    height: 370px;
+    margin-bottom: 2em;
 }
 
 
@@ -122,7 +163,7 @@ ul {
     margin-top: 2em;
 }
 
-.phone, .address {
+.email {
     margin: 2em;
 }
 
@@ -138,6 +179,20 @@ ul {
         font-size: calc(18px + 6 * ((100vw - 320px) / 680));
     }
 
+}
+
+@media (min-width: 800px) {
+    .img-block {
+        flex-direction: row;
+    }
+
+    .img-bl-txt {
+        margin-right: 1.5em;
+    }
+
+    .about-img {
+        margin-bottom: 0em;
+    }
 }
 
 @media (min-width: 1000px) {
