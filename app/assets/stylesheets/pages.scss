@@ -49,6 +49,7 @@ ul {
     width: 9em;
     background-color: #FDEDD8F2;
     padding-bottom: 0.7em;
+    border-radius: 10px;
 }
 
 #menu-btn {
@@ -126,6 +127,27 @@ ul {
 
 .home-cert {
     order: 2;
+}
+
+// sub home
+
+.socials {
+    margin-top: 2.7rem;
+    margin-bottom: 5rem;
+}
+
+.social {
+    width: 40px;
+}
+
+.social-name {
+    margin: 3px;
+}
+
+.sub-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
 }
 
 
